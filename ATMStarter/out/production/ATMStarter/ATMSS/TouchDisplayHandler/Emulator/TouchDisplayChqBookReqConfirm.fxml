@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATMSS.TouchDisplayHandler.Emulator.TouchDisplayEmulatorController">
+    <children>
+        <AnchorPane layoutY="40.0" prefHeight="260.0" prefWidth="680.0">
+            <children>
+                <Label alignment="CENTER" layoutX="40.0" layoutY="70.0" prefHeight="48.0" prefWidth="600.0" text="Request Statement Successfully!" textFill="#5089d8">
+                    <font>
+                        <Font name="Arial Bold Italic" size="30.0" />
+                    </font>
+                </Label>
+            <Label fx:id="paperStatus" alignment="CENTER" layoutX="40.0" layoutY="153.0" prefHeight="48.0" prefWidth="600.0" textFill="#b70404">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="toPrint1" layoutX="73.0" layoutY="340.0" mnemonicParsing="false" onAction="#function_buttonPressed" prefHeight="48.0" prefWidth="217.0" text="Print Advice &amp; Go Back" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button layoutX="410.0" layoutY="430.0" mnemonicParsing="false" onAction="#function_buttonPressed" prefHeight="48.0" prefWidth="217.0" text="Take Card" textAlignment="CENTER" textFill="#b70404">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="73.0" layoutY="430.0" mnemonicParsing="false" onAction="#function_buttonPressed" prefHeight="48.0" prefWidth="217.0" text="Go Back" textAlignment="CENTER" textFill="#0aa90a">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="toPrint2" layoutX="410.0" layoutY="340.0" mnemonicParsing="false" onAction="#function_buttonPressed" prefHeight="48.0" prefWidth="217.0" text="Print Advice &amp; Take Card" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+      <Circle centerX="90.0" centerY="30.0" layoutX="20.0" layoutY="20.0" onMouseClicked="#NormalProblem" radius="10.0" stroke="#e28b55" strokeType="INSIDE">
+         <effect>
+            <DropShadow offsetY="5.0">
+               <color>
+                  <Color red="0.5065789222717285" green="0.32083332538604736" blue="0.04221491143107414" />
+               </color>
+            </DropShadow>
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3405275779376499" startY="0.42206235011990406">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9137254953384399" green="0.38823530077934265" blue="0.03921568766236305" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle centerX="50.0" centerY="30.0" layoutX="20.0" layoutY="20.0" onMouseClicked="#SevereProblem" radius="10.0" stroke="#c44c4c" strokeType="INSIDE">
+         <effect>
+            <DropShadow offsetY="5.0">
+               <color>
+                  <Color red="0.5197368264198303" green="0.031280457973480225" blue="0.031280457973480225" />
+               </color>
+            </DropShadow>
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3405275779376499" startY="0.42206235011990406">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7176470756530762" green="0.01568627543747425" blue="0.01568627543747425" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+    </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+<Pane prefHeight="290.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATMSS.BuzzerHandler.Emulator.BuzzerEmulatorController">
+   <children>
+      <Circle fill="#f5ebeb" layoutX="146.0" layoutY="124.0" radius="104.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="146.0" layoutY="124.0" radius="74.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9671052694320679" green="0.022386696189641953" blue="0.022386696189641953" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Button layoutX="10.0" layoutY="245.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="30.0" prefWidth="131.0" text="Severe Error" />
+      <Button layoutX="151.0" layoutY="245.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="30.0" prefWidth="131.0" text="Normal Error" />
+   </children>
+</Pane>

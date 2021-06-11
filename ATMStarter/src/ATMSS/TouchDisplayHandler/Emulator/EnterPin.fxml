@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATMSS.TouchDisplayHandler.Emulator.TouchDisplayEmulatorController">
+    <children>
+        <AnchorPane prefHeight="520.0" prefWidth="680.0">
+            <children>
+                <ImageView fitHeight="300.0" fitWidth="247.0" layoutX="40.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@pinCode.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="40.0" layoutY="360.0" prefHeight="70.0" prefWidth="600.0" text="Please Enter Pin">
+                    <font>
+                        <Font name="Arial Bold Italic" size="30.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="pinNumberField" editable="false" layoutX="40.0" layoutY="440.0" prefHeight="30.0" prefWidth="400.0" />
+                <Label layoutX="483.0" layoutY="36.0" textFill="#b70404">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="timerCounter" layoutX="574.0" layoutY="36.0" text="60" textFill="#b70404">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="290.0" layoutY="110.0" prefHeight="179.0" prefWidth="367.0">
+            <children>
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="30.0" prefHeight="70.0" prefWidth="100.0" text="step 1" textFill="#247c86">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="100.0" prefHeight="70.0" prefWidth="100.0" text="step 2" textFill="#247c86">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" layoutX="120.0" layoutY="30.0" prefHeight="70.0" prefWidth="192.0" text="Enter the PIN" wrapText="true">
+                    <font>
+                        <Font name="Arial Italic" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" layoutX="120.0" layoutY="100.0" prefHeight="24.0" prefWidth="218.0" text="then press ENTER" wrapText="true">
+                    <font>
+                        <Font name="Arial Italic" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" layoutX="120.0" layoutY="135.0" prefHeight="24.0" prefWidth="218.0" text="if wrong press CLEAR" wrapText="true">
+                    <font>
+                        <Font name="Arial Italic" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Circle onMouseClicked="#NormalProblem" centerX="90.0" centerY="30.0" layoutX="10.0" layoutY="10.0" radius="10.0" stroke="#e28b55" strokeType="INSIDE">
+         <effect>
+            <DropShadow offsetY="5.0">
+               <color>
+                  <Color red="0.5065789222717285" green="0.32083332538604736" blue="0.04221491143107414" />
+               </color>
+            </DropShadow>
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3405275779376499" startY="0.42206235011990406">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9137254953384399" green="0.38823530077934265" blue="0.03921568766236305" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle centerX="50.0" centerY="30.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#SevereProblem" radius="10.0" stroke="#c44c4c" strokeType="INSIDE">
+         <effect>
+            <DropShadow offsetY="5.0">
+               <color>
+                  <Color red="0.5197368264198303" green="0.031280457973480225" blue="0.031280457973480225" />
+               </color>
+            </DropShadow>
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3405275779376499" startY="0.42206235011990406">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7176470756530762" green="0.01568627543747425" blue="0.01568627543747425" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+    </children>
+</AnchorPane>
